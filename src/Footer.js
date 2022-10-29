@@ -12,16 +12,14 @@ const Footer = () => {
                             <h2>Company</h2>
                             <ul>
                                 <li>
-                                    <a href="#">About</a>
+                                    <a href="#">About Us</a>
                                 </li>
                                 <li>
-                                    <a href="#">About</a>
+                                    <a href="#">Carreers</a>
                                 </li>
+                                
                                 <li>
-                                    <a href="#">About</a>
-                                </li>
-                                <li>
-                                    <a href="#">About</a>
+                                    <a href="#">Update News</a>
                                 </li>
                             </ul>
                         </div>
@@ -30,17 +28,15 @@ const Footer = () => {
                             <h2>Support</h2>
                             <ul>
                                 <li>
-                                    <a href="#">About</a>
+                                    <a href="#">Help center</a>
                                 </li>
                                 <li>
-                                    <a href="#">About</a>
+                                    <a href="#">Terms and Conditions</a>
                                 </li>
                                 <li>
-                                    <a href="#">About</a>
+                                    <a href="#">Feedback</a>
                                 </li>
-                                <li>
-                                    <a href="#">About</a>
-                                </li>
+                                
                             </ul>
                         </div>
 
@@ -48,17 +44,15 @@ const Footer = () => {
                             <h2>Services</h2>
                             <ul>
                                 <li>
-                                    <a href="#">About</a>
+                                    <a href="#">Privacy policy</a>
                                 </li>
                                 <li>
-                                    <a href="#">About</a>
+                                    <a href="#">Do not sell my Info</a>
                                 </li>
                                 <li>
-                                    <a href="#">About</a>
+                                    <a href="#">Aboid Scams & Fraud</a>
                                 </li>
-                                <li>
-                                    <a href="#">About</a>
-                                </li>
+                                
                             </ul>
                         </div>
 
@@ -94,7 +88,7 @@ const Footer = () => {
                     </div>
                     <hr />
                     <div className="mt-5"> 
-                        <p className="main-hero-para text-center w-100">Copyright @ 2022. All rights reserved.</p>
+                        <p className="main-hero-para text-center w-100">HouseRentals.com is part of the Rent. Network of Sites © 2022 HouseRent Group Inc. All photos, videos, text and other content are the property of HouseRent Group Inc. HOUSERENTALS.COM and the HOUSERENTALS.COM Trade Dress are registered trademarks of HouseRent Group Inc. All rights reserved. If you are using a screen reader, or are having trouble reading this website, please email accessibilityfeedback@houserent.com.</p>
                     </div>
                 </div>
              </div>
