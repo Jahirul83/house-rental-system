@@ -15,12 +15,16 @@ class Navbar extends Component {
         return(
             <nav className="NavbarItems">
                 <h1 className="navbar-logo">
+
                     Rent<i className="fab fa-react"></i>
+
+                    React<i className='fab fa-react'></i>
+
                 </h1>
                 <div className="manu-icon" onClick={this.handleClick}>
-                    <i className={this.state.clicked ? "fa-solid fa-x":"fa-solid fa-bars"}></i>
+                    <i className={this.state.clicked ? 'fa-solid fa-x':"fa-solid fa-bars"}></i>
                 </div>
-                <ui className={this.state.clicked ? "nav-menu active" : "nav-manu"}>
+                <ul className={this.state.clicked ? 'nav-menu active' : 'nav-manu'}>
                     {MenuItems.map((item,index)=>
                     {
                         return (
@@ -33,7 +37,7 @@ class Navbar extends Component {
                     }
                     )}
                     
-                </ui>
+                </ul>
                 <Button>Sign Up</Button>
             </nav>
         )
