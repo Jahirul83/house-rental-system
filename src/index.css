@@ -9,7 +9,7 @@ body {
 
 /*---------footer er design ekan teke soro------*/
 
-footer{
+footer {
   padding: 5rem 0;
   background-color: #182334;
   color: #fff;
@@ -28,6 +28,13 @@ footer li {
   margin: 1rem 0;
 }
 
+ a {
+  text-decoration: none !important;
+}
+
+footer a{
+  color: #fff;
+}
 
 footer li:hover {
   color: var(--primary-color);
