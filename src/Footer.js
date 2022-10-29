@@ -44,7 +44,7 @@ const Footer = () => {
                             </ul>
                         </div>
 
-                        <div className="col-6 col-lg-3">
+                        <div className=" col-6 col-lg-3">
                             <h2>Services</h2>
                             <ul>
                                 <li>
@@ -91,6 +91,10 @@ const Footer = () => {
                                  </div>
                         </div>
              
+                    </div>
+                    <hr />
+                    <div className="mt-5"> 
+                        <p className="main-hero-para text-center w-100">Copyright @ 2022. All rights reserved.</p>
                     </div>
                 </div>
              </div>
