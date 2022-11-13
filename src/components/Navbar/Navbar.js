@@ -34,7 +34,8 @@ class Navbar extends Component {
                     )}
                     
                 </ui>
-                <Button>Login</Button>
+                <Button >Login</Button>
+                <p className="navebutton"></p>
                 <Button>Sign Up</Button>
             </nav>
         )

@@ -9,7 +9,7 @@ const Footer = () => {
                 <div className="col-12 col-lg-10 mx-auto">
                     <div className="row">
                         <div className="col-6 col-lg-3">
-                            <h2>Company</h2>
+                            <h5>Company</h5>
                             <ul>
                                 <li>
                                     <a href="#">About Us</a>
@@ -25,7 +25,7 @@ const Footer = () => {
                         </div>
 
                         <div className="col-6 col-lg-3">
-                            <h2>Support</h2>
+                            <h5>Support</h5>
                             <ul>
                                 <li>
                                     <a href="#">Help center</a>
@@ -41,7 +41,7 @@ const Footer = () => {
                         </div>
 
                         <div className=" col-6 col-lg-3">
-                            <h2>Services</h2>
+                            <h5>Services</h5>
                             <ul>
                                 <li>
                                     <a href="#">Privacy policy</a>
@@ -57,7 +57,7 @@ const Footer = () => {
                         </div>
 
                         <div className="col-6 col-lg-3">
-                            <h2>Follow us</h2>
+                            <h5>Follow us</h5>
                                  <div className="row">
                                     <div className="col-3 mx-auto">
                                         <a href="#">
