@@ -2,39 +2,45 @@
     --primary: #3acbf7;
 }
 .btn {
-    padding: 8px 20px;
+    padding: 5px 10px;
     border-radius: 4px;
     outline: none;
     border: none;
     cursor: pointer;
+    
 }
 .btn:hover{
-    padding: 8px 20px;
+    padding: 8px 12px;
     transition: all 0.3s ease-out;
     background: #fff;
     color: #6568F4;
     transition: 250ms;
+    
 }
 .btn--primary{
    background-color: var(--primary);
+   
 }
 .btn--outlin{
     background-color: transparent;
     color: #fff;
-    padding: 8px 20px;
+    padding: 5px 10px;
     border-radius: 4px;
     border: 1px solid var(--primary);
     transition: all 0.3s ease-out;
+    
 }
 .btn--medium{
-    padding: 8px 20px;
+    padding: 5px 10px;
     border-radius: 4px;
     font-size: 18px;
     color: #fff;
+    font-size: small;
 }
 .btn--large{
     padding: 12px 26px;
     border-radius: 20px;
     font-size: 18px;
     color: #fff;
+    
 }
