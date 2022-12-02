@@ -1,7 +1,9 @@
+import HomePage from "../../pages/HomePage";
+
 export const MenuItems = [
    {
       title: 'Home',
-      url: '#',
+      url: '/',
       cName: 'nav-links'
     },
     {
@@ -21,12 +23,12 @@ export const MenuItems = [
     },
     {
         title: 'Login',
-        url: '#',
+        url: '/Login',
         cName: 'nav-links-mobile'
     },
     {
         title: 'Sign-up',
-        url: '#',
+        url: '/SignUp',
         cName: 'nav-links-mobile'
     }
   

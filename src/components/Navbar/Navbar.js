@@ -2,16 +2,21 @@ import { MenuItems } from "./MenuItems"
 import React, { Component } from "react";
 import './Navbar.css';
 import { Button } from "../Button";
+import { Link } from "react-router-dom";
+
+
+
 class Navbar extends Component {
     state={ clicked: false }
 
     handleClick = () =>{
         this.setState({ clicked: !this.state.clicked})
+    
     }
-
-
+    
 
     render(){
+
         return(
             <nav className="NavbarItems">
                 <h1 className="navbar-logo">
@@ -34,11 +39,16 @@ class Navbar extends Component {
                     )}
                     
                 </ui>
-                <Button >Login</Button>
+                <Link to="/Login">
+                    <Button>Login</Button>
+                </Link>
                 <p className="navebutton"></p>
-                <Button>Sign Up</Button>
+                <Link to="/SignUp">
+                  <Button>Sign Up</Button>
+                </Link>
             </nav>
         )
     }
 }
+
 export default Navbar

@@ -44,11 +44,7 @@ const HomePage = () => {
                                         </div>
                                         <div className="col-sm-2 d-grid form-group">
                                             <button className="btn btn-primary btn-block" id="place-search-btn" type="submit">Search</button>
-                                            <input type="hidden" name="post_code" className="post_code" />
-                                            <input type="hidden" name="area_name" className="area_name" />
-                                            <input type="hidden" name="city_name" className="city_name" />
-                                            <input type="hidden" name="district_name" className="district_name" />
-                                            <input type="hidden" name="division_name" className="division_name" />
+                                           
                                         </div>
                                     </div>
                                 </form>
