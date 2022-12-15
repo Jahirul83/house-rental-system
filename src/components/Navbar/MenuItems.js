@@ -1,4 +1,6 @@
 import HomePage from "../../pages/HomePage";
+import Contact from "../../pages/Contact";
+import Services from "../../pages/Services";
 
 export const MenuItems = [
    {
@@ -8,7 +10,7 @@ export const MenuItems = [
     },
     {
         title: 'Services',
-        url: '#',
+        url: '/Services',
         cName: 'nav-links'
     },
     {
@@ -18,7 +20,7 @@ export const MenuItems = [
     },
     {
         title: 'Contact Us',
-        url: '#',
+        url: '/Contact',
         cName: 'nav-links'
     },
     {

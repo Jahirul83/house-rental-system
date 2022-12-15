@@ -1,0 +1,12 @@
+.cardDesignofsignup
+{
+    width: '30rem';
+    background-color: rgb(78, 190, 224);
+}
+.SignUpCard{
+    background-color: gray;
+    padding-top: "30%";
+    display: flex;
+    justify-content: center;
+
+}
