@@ -7,6 +7,8 @@ import HomePage from "./pages/HomePage";
 import { Route, Routes } from 'react-router-dom';
 import SignUp from './pages/SignUp';
 import Login from './pages/Login';
+import Services from './pages/Services';
+import Contact from './pages/Contact';
 
 
 function App() {
@@ -17,6 +19,8 @@ function App() {
         <Route path='/' element={<HomePage/>}/>
         <Route path='/SignUp' element={<SignUp/>}/>
         <Route path='/Login' element={<Login/>}/>
+        <Route path='/Services' element={<Services/>}/>
+        <Route path='/Contact' element={<Contact/>}/>
        </Routes>
       <Footer/>
     </div>
