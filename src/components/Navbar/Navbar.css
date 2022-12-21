@@ -13,6 +13,10 @@
    margin-left: 20px;
    cursor: pointer;
 }
+/*logo design*/
+.logo:visited, .logo:hover, .logo:active {
+    color: inherit;
+  }
 .fa-react{
     margin-left: 0.5rem;
     font-size: 1.6rem;

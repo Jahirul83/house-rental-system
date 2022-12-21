@@ -20,7 +20,7 @@ class Navbar extends Component {
         return(
             <nav className="NavbarItems">
                 <h1 className="navbar-logo">
-                    <i class="fa-solid fa-house"></i>Rent
+                    <a href="/" className="logo"> <i class="fa-solid fa-house"></i>Rent</a>
                 </h1>
                 <div className="manu-icon" onClick={this.handleClick}>
                     <i className={this.state.clicked ? "fa-solid fa-x":"fa-solid fa-bars"}></i>
