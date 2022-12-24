@@ -2,6 +2,7 @@ import React from 'react'
 import { Card } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import { Link } from 'react-router-dom';
 import './Login.css';
 
 const Login = () => {
@@ -31,7 +32,7 @@ const Login = () => {
        </Button>
       </div>
       <Form.Text>
-          If you don't have an account <a href='/SignUp'>Sign Up</a>
+          Don't have an account? Please <Link to='/SignUp'>Sign Up</Link>
         </Form.Text>
     </Form>
       </Card.Body>
