@@ -1,0 +1,31 @@
+.menu a{
+    color: rgb(247, 245, 248);
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 30px;
+}
+
+.menu a:hover {
+    color: rgb(0, 0, 0);
+    background-color: #6d76f7;
+    border-radius: 4px;
+    transition: all 0.2s ease-out;
+    text-align: center;
+}
+.header-design{
+    background: linear-gradient(90deg, rgba(110, 94, 254) 0%, rgb(46, 39, 175) 100%);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.5rem;
+}
+.nav-logo{
+    color: #fff;
+   justify-self: start;
+   margin-left: 20px;
+   cursor: pointer;
+}
+.logo:visited, .logo:hover, .logo:active {
+    color: inherit;
+  }
