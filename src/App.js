@@ -6,11 +6,12 @@ import HomePage from "./pages/HomePage";
 import { Route, Routes } from 'react-router-dom';
 import SignUp from './pages/SignUp';
 import Login from './pages/Login';
-import Services from './pages/Services';
+
 import Contact from './pages/Contact';
 import Navbar from './components/Navbar/Navbar';
 import Header from './components/header/Header';
 import PrivateRoutes from './components/PrivateRoutes';
+import Services from './pages/Services';
 
 
 function App() {
@@ -20,9 +21,9 @@ function App() {
        <Routes>
         <Route path='/' element={<HomePage/>}/>
         <Route path='/SignUp' element={<SignUp/>}/>
-        <Route path='/Login' element={<Login/>}/>
-        <Route path='/Services' element={<PrivateRoutes><Services/></PrivateRoutes>}/>
-        <Route path='/Contact' element={<Contact/>}/>
+        <Route path='/login' element={<Login/>}/>
+        <Route path='/Services' element={<PrivateRoutes><Services></Services></PrivateRoutes>}/>
+        <Route path='/Contact' element={<PrivateRoutes><Contact/></PrivateRoutes>}/>
        </Routes>
       <Footer/>
     </div>

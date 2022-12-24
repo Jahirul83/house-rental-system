@@ -1,28 +1,21 @@
-import { getAuth, onAuthStateChanged } from 'firebase/auth';
-import React, {  useEffect, useState } from 'react';
+import React from 'react';
+import { useContext } from 'react';
 import { Navigate, useLocation } from 'react-router-dom';
-import app from '../firebase/firebase.config';
+import { AuthContext } from './contexts/UserContext';
 
-const auth = getAuth(app);
 
-const PrivateRoutes = ({childen}) => {
-    const [user, setUser] = useState(null)
-
+const PrivateRoute = ({ children }) => {
+    const { user, loading } = useContext(AuthContext)
     const location = useLocation()
 
-    useEffect(() => {
-        const unSubscribe = onAuthStateChanged(auth, currentUser => {
-            console.log('current user in state', currentUser)
-            setUser(currentUser)
-        })
+    if (loading) {
+        return <div>Loading...</div>
+    }
 
-        return () => unSubscribe();
-
-    }, [])
-    if(user && user.uid){
-        return childen
+    if (user && user.uid) {
+        return children
     }
     return <Navigate to='/login' state={{ from: location }} replace></Navigate>
 };
 
-export default PrivateRoutes;
+export default PrivateRoute;
