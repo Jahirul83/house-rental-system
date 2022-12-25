@@ -43,15 +43,15 @@ const SignUp = () => {
           <Form onSubmit={SignUp}>
             <Form.Group className="mb-3 " controlId="formBasicEmail">
               <Form.Label>Name</Form.Label>
-              <Form.Control name='name' type="text" placeholder="Name" />
+              <Form.Control name='name' type="text" placeholder="Name" required/>
             </Form.Group>
             <Form.Group className="mb-3 " controlId="formBasicEmail">
               <Form.Label>Username</Form.Label>
-              <Form.Control name='username' type="text" placeholder="Username" />
+              <Form.Control name='username' type="text" placeholder="Username" required/>
             </Form.Group>
             <Form.Group className="mb-3 " controlId="formBasicEmail">
               <Form.Label>Email address</Form.Label>
-              <Form.Control name='email' type="email" placeholder="Enter email" />
+              <Form.Control name='email' type="email" placeholder="Enter email" required/>
               <Form.Text className="text-muted">
                 We'll never share your email with anyone else.
               </Form.Text>
@@ -59,11 +59,11 @@ const SignUp = () => {
 
             <Form.Group className="mb-3" controlId="formBasicPassword">
               <Form.Label>Password</Form.Label>
-              <Form.Control name='password' type="password" placeholder="Password" />
+              <Form.Control name='password' type="password" placeholder="Password" required/>
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasicPassword">
               <Form.Label>Retype-Password</Form.Label>
-              <Form.Control name='confirm' type="password" placeholder="Retype-Password" />
+              <Form.Control name='confirm' type="password" placeholder="Retype-Password" required/>
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasicCheckbox">
             </Form.Group>

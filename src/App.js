@@ -12,6 +12,7 @@ import Navbar from './components/Navbar/Navbar';
 import Header from './components/header/Header';
 import PrivateRoutes from './components/PrivateRoutes';
 import Services from './pages/Services';
+import AddRent from './pages/AddRent/AddRent';
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <Route path='/login' element={<Login/>}/>
         <Route path='/Services' element={<PrivateRoutes><Services></Services></PrivateRoutes>}/>
         <Route path='/Contact' element={<PrivateRoutes><Contact/></PrivateRoutes>}/>
+        <Route path='/addrent' element={<AddRent/>}/>
        </Routes>
       <Footer/>
     </div>
