@@ -1,105 +1,131 @@
 import React from "react";
 import { Button, Card, Form } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./AddRent.css";
 
+
+
+
+
+
 const AddRent = () => {
+
+  const handleAddRent = event => {
+    event.preventDefault();
+    const form = event.target;
+    const title = form.title.value;
+    const image = form.image.value;
+    const address = form.address.value;
+    const bedroom = form.bedroom.value;
+    const washroom = form.washroom.value;
+    const dining = form.dining.value;
+    const rent = form.rent.value;
+    const contact = form.contact.value;
+
+
+    const service = { title, image, address, bedroom, washroom, dining, rent, contact };
+
+    fetch('http://localhost:5000/services', {
+      method: 'POST',
+      headers: {
+        'content-type': 'application/json'
+      },
+      body: JSON.stringify(service)
+    })
+      .then(res => res.json())
+      .then(data => {
+
+
+        form.reset();
+      })
+
+  }
+
   return (
-    <div className="logincard">
-      <Card className="cardDesign mt-5 mb-5">
-        <Card.Body>
-          <Form>
+    <form onSubmit={handleAddRent} className="d-flex flex-column gap-2 mx-auto bg-primary p-5 rounded my-5 bg-opacity-25" style={{ width: "50%" }}>
+      <div className="d-flex flex-column gap-1">
+        <label>Title</label>
+        <input
+          name="title"
+          type="text"
+          placeholder="Enter your House name"
+          required
+        />
+      </div>
 
-            <Form.Group className="mb-3 " controlId="formBasictitle">
-              <Form.Label>Title</Form.Label>
-              <Form.Control
-                name="Title"
-                type="text"
-                placeholder="Enter your House name"
-                required
-              />
-            </Form.Group>
+      <div className="d-flex flex-column gap-1">
+        <label>Image</label>
+        <input
+          name="image"
+          type="text"
+          placeholder="Enter image"
+          required
+        />
+      </div>
 
+      <div className="d-flex flex-column gap-1">
+        <label>Address</label>
+        <input
+          name="address"
+          type="text"
+          placeholder="Enter your House name"
+          required
+        />
+      </div>
 
-            <Form.Group controlId="formFile" className="mb-3">
-              <Form.Label>Image</Form.Label>
-              <Form.Control type="file" />
-            </Form.Group>
+      <div className="d-flex flex-column gap-1">
+        <label>Title</label>
+        <input
+          name="bedroom"
+          type="text"
+          placeholder="Enter your House name"
+          required
+        />
+      </div>
 
+      <div className="d-flex flex-column gap-1">
+        <label>Title</label>
+        <input
+          name="washroom"
+          type="text"
+          placeholder="Enter your House name"
+          required
+        />
+      </div>
 
-            <Form.Group
-              className="mb-3"
-              controlId="exampleForm.ControlTextarea1"
-            >
-              <Form.Label>Address</Form.Label>
-              <Form.Control as="textarea" rows={3} />
-            </Form.Group>
+      <div className="d-flex flex-column gap-1">
+        <label>Title</label>
+        <input
+          name="dining"
+          type="text"
+          placeholder="Enter your House name"
+          required
+        />
+      </div>
 
+      <div className="d-flex flex-column gap-1">
+        <label>Title</label>
+        <input
+          name="rent"
+          type="text"
+          placeholder="Enter your House name"
+          required
+        />
+      </div>
 
-            <Form.Group className="mb-3 " controlId="formBasictitle">
-              <Form.Label>Bad room</Form.Label>
-              <Form.Control
-                name="Title"
-                type="text"
-                placeholder="Enter Number of bad room"
-                required
-              />
-            </Form.Group>
+      <div className="d-flex flex-column gap-1">
+        <label>Title</label>
+        <input
+          name="contact"
+          type="text"
+          placeholder="Enter your House name"
+          required
+        />
+      </div>
 
+      <input className="btn btn-primary w-50 mx-auto" type="submit" value="Add" />
 
-            <Form.Group className="mb-3 " controlId="formBasictitle">
-              <Form.Label>Wash room</Form.Label>
-              <Form.Control
-                name="Title"
-                type="text"
-                placeholder="Enter Number of wash room"
-                required
-              />
-            </Form.Group>
-
-            <Form.Group className="mb-3 " controlId="formBasictitle">
-              <Form.Label>Dining room</Form.Label>
-              <Form.Control
-                name="Title"
-                type="text"
-                placeholder="Enter Number of dining room"
-                required
-              />
-            </Form.Group>
-
-            <Form.Group className="mb-3 " controlId="formBasictitle">
-              <Form.Label>Rent</Form.Label>
-              <Form.Control
-                name="Title"
-                type="text"
-                placeholder="Enter rent of house"
-                required
-              />
-            </Form.Group>
-
-            <Form.Group className="mb-3 " controlId="formBasictitle">
-              <Form.Label>Contact No</Form.Label>
-              <Form.Control
-                name="Title"
-                type="text"
-                placeholder="Enter Owner contact No"
-                required
-              />
-            </Form.Group>
-
-            <Form.Group
-              className="mb-3"
-              controlId="formBasicCheckbox"
-            ></Form.Group>
-            <div class="col-md-12 text-center">
-              <Button variant="success" type="submit">
-                Add
-              </Button>
-            </div>
-          </Form>
-        </Card.Body>
-      </Card>
-    </div>
+    </form>
   );
 };
 
