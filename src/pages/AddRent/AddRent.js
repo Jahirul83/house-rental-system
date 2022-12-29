@@ -24,7 +24,7 @@ const AddRent = () => {
 
 
     const service = { title, image, address, bedroom, washroom, dining, rent, contact };
-
+    console.log(service);
     fetch('http://localhost:5000/services', {
       method: 'POST',
       headers: {
@@ -68,57 +68,57 @@ const AddRent = () => {
         <input
           name="address"
           type="text"
-          placeholder="Enter your House name"
+          placeholder="Enter house address"
           required
         />
       </div>
 
       <div className="d-flex flex-column gap-1">
-        <label>Title</label>
+        <label>Bedroom</label>
         <input
           name="bedroom"
           type="text"
-          placeholder="Enter your House name"
+          placeholder="Enter num of total bedroom"
           required
         />
       </div>
 
       <div className="d-flex flex-column gap-1">
-        <label>Title</label>
+        <label>Washroom</label>
         <input
           name="washroom"
           type="text"
-          placeholder="Enter your House name"
+          placeholder="Enter num of total washroom"
           required
         />
       </div>
 
       <div className="d-flex flex-column gap-1">
-        <label>Title</label>
+        <label>Dining</label>
         <input
           name="dining"
           type="text"
-          placeholder="Enter your House name"
+          placeholder="Enter num of total dining"
           required
         />
       </div>
 
       <div className="d-flex flex-column gap-1">
-        <label>Title</label>
+        <label>Rent</label>
         <input
           name="rent"
           type="text"
-          placeholder="Enter your House name"
+          placeholder="Enter house rent"
           required
         />
       </div>
 
       <div className="d-flex flex-column gap-1">
-        <label>Title</label>
+        <label>Contact</label>
         <input
           name="contact"
           type="text"
-          placeholder="Enter your House name"
+          placeholder="Enter owner contact number"
           required
         />
       </div>
