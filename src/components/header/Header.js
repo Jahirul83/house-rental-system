@@ -39,12 +39,16 @@ const Header = () => {
           <Nav className="mx-auto me-0 menu">
             <Link to="/">Home</Link>
             <Link to="/services">Services</Link>
-            <Link to="/addrent">Add rent</Link>
+
             <Link to="/contact">Contact Us</Link>
             {user?.uid ? (
-              <Button onClick={logout} variant="primary">
-                Logout
-              </Button>
+              <div>
+                <Link to="/addrent">Add rent</Link>
+                <Button onClick={logout} variant="primary">
+                  Logout
+                </Button>
+              </div>
+
             ) : (
               <>
                 <Link to="/Login">
