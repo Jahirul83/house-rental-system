@@ -1,8 +1,10 @@
 import React from "react";
+import Banner from "./Banner/Banner";
 import './HomePage.css';
 import Services from "./Services";
 //test
 const HomePage = () => {
+    const count=3;
     return (
         <section id="page-banner">
             <div className="container-fluid">
@@ -58,7 +60,10 @@ const HomePage = () => {
                 </div>
             </div>
             <div>
-                <Services/>
+                <Banner/>
+            </div>
+            <div>
+                <Services count={count}/>
             </div>
         </section>
     );
