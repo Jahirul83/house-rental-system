@@ -1,17 +1,26 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Button, Card } from 'react-bootstrap';
+import { AuthContext } from '../contexts/UserContext';
 
-function Cards(props) {
+function Cards({ service }) {
+
+    const { user } = useContext(AuthContext);
     return (
         <div>
-            <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src={props.img} />
+            <Card >
+                <Card.Img style={{ height: "200px", width: "20vw" }} variant="top" src={service.image} />
                 <Card.Body>
-                    <Card.Title>{props.title}</Card.Title>
+                    <Card.Title>{service.title}</Card.Title>
                     <Card.Text>
-                        {props.text}
+                        {service.address}
                     </Card.Text>
-                    <Button variant="primary">Buy now</Button>
+                    <Card.Text>BDT{" "}
+                        {service.rent}
+                    </Card.Text>
+                    {
+                        user &&
+                        <Button variant="primary">View Deatils</Button>
+                    }
                 </Card.Body>
             </Card>
         </div>
