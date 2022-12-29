@@ -65,9 +65,10 @@ const AddRent = () => {
 
       <div className="d-flex flex-column gap-1">
         <label>Address</label>
-        <input
+        <textarea
+          rows="3"
           name="address"
-          type="text"
+          type="textarea"
           placeholder="Enter house address"
           required
         />
@@ -77,7 +78,9 @@ const AddRent = () => {
         <label>Bedroom</label>
         <input
           name="bedroom"
-          type="text"
+          min="1"
+          max="5"
+          type="number"
           placeholder="Enter num of total bedroom"
           required
         />
@@ -87,7 +90,9 @@ const AddRent = () => {
         <label>Washroom</label>
         <input
           name="washroom"
-          type="text"
+          type="number"
+          min="1"
+          max="5"
           placeholder="Enter num of total washroom"
           required
         />
@@ -97,7 +102,9 @@ const AddRent = () => {
         <label>Dining</label>
         <input
           name="dining"
-          type="text"
+          type="number"
+          min="1"
+          max="5"
           placeholder="Enter num of total dining"
           required
         />

@@ -38,6 +38,7 @@ const Login = () => {
   return (
     <div className="logincard">
       <Card className="cardDesign mt-5 mb-5" >
+      <p class="h1 mt-5 fw-bold d-flex justify-content-center">Log in</p>
         <Card.Body>
           <Form onSubmit={handelLogin}>
             <Form.Group className="mb-3 " controlId="formBasicEmail">
