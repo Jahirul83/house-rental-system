@@ -16,7 +16,7 @@ function Cards({ service, setDetails }) {
     return (
         <div>
             <Card >
-                <Card.Img style={{ height: "200px", width: "20vw" }} variant="top" src={service.image} />
+                <Card.Img style={{ height: "300px", width: "29vw" }} variant="top" src={service.image} />
                 <Card.Body>
                     <Card.Title>{service.title}</Card.Title>
                     <Card.Text>

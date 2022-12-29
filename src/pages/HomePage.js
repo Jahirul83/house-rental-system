@@ -4,7 +4,7 @@ import './HomePage.css';
 import Services from "./Services";
 //test
 const HomePage = () => {
-    const count=3;
+    const count = 3;
     return (
         <section id="page-banner">
             <div className="container-fluid">
@@ -60,10 +60,10 @@ const HomePage = () => {
                 </div>
             </div>
             <div>
-                <Banner/>
+                <Banner />
             </div>
             <div>
-                <Services count={count}/>
+                <Services />
             </div>
         </section>
     );

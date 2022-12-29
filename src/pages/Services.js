@@ -17,13 +17,13 @@ const Services = (props) => {
 
 
     return (
-        <div className='container'>
+        <div>
             <div className='d-flex flex-wrap gap-5 justify-content-center'>
                 {
                     services.map(service => <Cards setDetails={props.setData}
                         key={service._id}
                         service={service}
-                        
+
                     ></Cards>)
                 }
             </div>
