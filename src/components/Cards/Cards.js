@@ -1,10 +1,18 @@
 import React, { useContext } from 'react';
 import { Button, Card } from 'react-bootstrap';
+import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../contexts/UserContext';
 
-function Cards({ service }) {
+function Cards({ service, setDetails }) {
+
 
     const { user } = useContext(AuthContext);
+
+    const navigate = useNavigate();
+    const submitHandle = () => {
+        setDetails(service);
+        navigate("/ViewDetails");
+    }
     return (
         <div>
             <Card >
@@ -19,7 +27,8 @@ function Cards({ service }) {
                     </Card.Text>
                     {
                         user &&
-                        <Button variant="primary">View Deatils</Button>
+                        //<Link to={`/ViewDetails/${service._id}`}> <Button variant="primary">View Deatils</Button> </Link>
+                        <Button onClick={submitHandle}>View Deatils</Button>
                     }
                 </Card.Body>
             </Card>

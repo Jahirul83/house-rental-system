@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Footer from "./Footer";
@@ -13,21 +13,27 @@ import Header from './components/header/Header';
 import PrivateRoutes from './components/PrivateRoutes';
 import Services from './pages/Services';
 import AddRent from './pages/AddRent/AddRent';
+import ViewDetails from './pages/viewDetails/viewDetails';
+
+
 
 
 function App() {
+  const [viewD, setViewD] = useState();
+
   return (
     <div className="App">
       <Header></Header>
-       <Routes>
-        <Route path='/' element={<HomePage/>}/>
-        <Route path='/SignUp' element={<SignUp/>}/>
-        <Route path='/login' element={<Login/>}/>
-        <Route path='/Services' element={<Services></Services>}/>
-        <Route path='/Contact' element={<PrivateRoutes><Contact/></PrivateRoutes>}/>
-        <Route path='/addrent' element={<AddRent/>}/>
-       </Routes>
-      <Footer/>
+      <Routes>
+        <Route path='/' element={<HomePage />} />
+        <Route path='/SignUp' element={<SignUp />} />
+        <Route path='/login' element={<Login />} />
+        <Route path='/Services' element={<Services setData={setViewD}></Services>} />
+        <Route path='/Contact' element={<PrivateRoutes><Contact /></PrivateRoutes>} />
+        <Route path='/ViewDetails' element={<ViewDetails viewData={viewD}></ViewDetails>} />
+        <Route path='/addrent' element={<AddRent />} />
+      </Routes>
+      <Footer />
     </div>
   );
 }

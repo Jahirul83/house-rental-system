@@ -6,7 +6,7 @@ import './Services.css';
 
 
 
-const Services = () => {
+const Services = (props) => {
 
     const [services, setService] = useState([]);
     useEffect(() => {
@@ -19,7 +19,7 @@ const Services = () => {
         <div className='container'>
             <div className='d-flex flex-wrap gap-5 justify-content-center'>
                 {
-                    services.map(service => <Cards
+                    services.map(service => <Cards setDetails={props.setData}
                         key={service._id}
                         service={service}
                         
