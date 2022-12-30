@@ -1,0 +1,13 @@
+
+.addreview-design
+{
+    
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    border-radius: 21%;
+    background-color: rgb(190, 190, 245);
+    padding: 40px;
+    gap: 15px;
+
+}

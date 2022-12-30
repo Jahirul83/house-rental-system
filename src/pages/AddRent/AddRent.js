@@ -42,10 +42,15 @@ const AddRent = () => {
   }
 
   return (
-    <form onSubmit={handleAddRent} className="d-flex flex-column gap-2 mx-auto bg-primary p-5 rounded my-5 bg-opacity-25" style={{ width: "50%" }}>
+    <form onSubmit={handleAddRent} className="mx-auto rounded my-3 p-5 bg-primary bg-opacity-25 addrent-design" >
+
+      <div className="d-flex justify-content-center">
+        <h1 className="AddService">Add service</h1>
+      </div>
+      
       <div className="d-flex flex-column gap-1">
         <label>Title</label>
-        <input
+        <input className="input-design"
           name="title"
           type="text"
           placeholder="Enter your House name"
@@ -56,6 +61,7 @@ const AddRent = () => {
       <div className="d-flex flex-column gap-1">
         <label>Image</label>
         <input
+          className="input-design"
           name="image"
           type="text"
           placeholder="Enter image"
@@ -66,6 +72,7 @@ const AddRent = () => {
       <div className="d-flex flex-column gap-1">
         <label>Address</label>
         <textarea
+        className="input-design"
           rows="3"
           name="address"
           type="textarea"
@@ -77,6 +84,7 @@ const AddRent = () => {
       <div className="d-flex flex-column gap-1">
         <label>Bedroom</label>
         <input
+          className="input-design"
           name="bedroom"
           min="1"
           max="5"
@@ -89,6 +97,7 @@ const AddRent = () => {
       <div className="d-flex flex-column gap-1">
         <label>Washroom</label>
         <input
+          className="input-design"
           name="washroom"
           type="number"
           min="1"
@@ -101,6 +110,7 @@ const AddRent = () => {
       <div className="d-flex flex-column gap-1">
         <label>Dining</label>
         <input
+          className="input-design"
           name="dining"
           type="number"
           min="1"
@@ -113,6 +123,7 @@ const AddRent = () => {
       <div className="d-flex flex-column gap-1">
         <label>Rent</label>
         <input
+          className="input-design"
           name="rent"
           type="text"
           placeholder="Enter house rent"
@@ -123,6 +134,7 @@ const AddRent = () => {
       <div className="d-flex flex-column gap-1">
         <label>Contact</label>
         <input
+          className="input-design"
           name="contact"
           type="text"
           placeholder="Enter owner contact number"

@@ -14,11 +14,11 @@ const ReviewCard = ({ review }) => {
                         <div>
                             <img src="https://aatapi.org/wp-content/uploads/2020/02/user.jpg" style={{ width: "80px" }} alt="" />
                         </div>
-                        <div className='mt-4'>
+                        <div className='mt-4 name-font'>
                             {review.name}
                         </div>
                     </Card.Title>
-                    <Card.Text className='mb-3'>
+                    <Card.Text className='mt-4'>
                         {review.review}
                     </Card.Text>
 
