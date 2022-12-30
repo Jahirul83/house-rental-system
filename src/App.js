@@ -16,6 +16,7 @@ import AddRent from './pages/AddRent/AddRent';
 import ViewDetails from './pages/viewDetails/viewDetails';
 import FAQ from './pages/FAQ/FAQ';
 import Review from './pages/Review/Review';
+import ShowReview from './pages/ShowReview/ShowReview';
 
 
 
@@ -36,6 +37,7 @@ function App() {
         <Route path='/addrent' element={<AddRent />} />
         <Route path='/faq' element={<FAQ />} />
         <Route path='/review' element={<Review />} />
+        <Route path='/showreview' element={<ShowReview />} />
       </Routes>
       <Footer />
     </div>

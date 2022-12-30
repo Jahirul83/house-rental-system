@@ -9,35 +9,35 @@ const Banner = () => {
             <Carousel.Item interval={1000}>
                 <img
                     className="d-block w-100"
-                    src="https://free4kwallpapers.com/uploads/originals/2016/02/14/historical-places-of-beautiful-bangladesh-wallpaper.jpg"
+                    src="https://c0.wallpaperflare.com/preview/677/401/219/indoors-furniture-room-window.jpg"
                     alt="First slide"
                 />
                 <Carousel.Caption>
-                    <h3>First slide label</h3>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    <h3>Welcome To House Rental Website</h3>
+                   
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item interval={500}>
                 <img
                     className="d-block w-100"
-                    src="https://th.bing.com/th/id/R.f74eca515136cafe4557bf13d3555ef8?rik=FrAjbV0R%2bcfzNw&riu=http%3a%2f%2ffarm7.static.flickr.com%2f6215%2f6287806559_8cbb1c30c1_b.jpg&ehk=MAEQR6MLp8Vhm%2fFJbll%2f8ZMD%2fFB1X9qJiCBk1bdv26I%3d&risl=&pid=ImgRaw&r=0"
+                    src="https://c4.wallpaperflare.com/wallpaper/74/457/102/life-room-interior-home-wallpaper-preview.jpg"
                     alt="Second slide"
                 />
                 <Carousel.Caption>
-                    <h3>Second slide label</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h3>Apartment searching can be exciting for tenants — it’s an opportunity for them to upgrade their life.</h3>
+                    <p>We live in the age of the internet and if you don’t market your rental online, you will shrink your pool for potential applicants significantly because most renters search online to find their next home. Fortunately, there are a plethora of online resources you can use to market your rental property. </p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src="https://th.bing.com/th/id/OIP.o7CNAS4DpVwO3h_9BbJ40wHaEK?pid=ImgDet&w=1280&h=721&rs=1"
+                    src="https://c0.wallpaperflare.com/preview/628/155/596/apartment-architecture-bookcase-bookshelves.jpg"
                     alt="Third slide"
                 />
                 <Carousel.Caption>
-                    <h3>Third slide label</h3>
+                    <h3>To make sure you find the perfect apartment for your needs, it’s important to conduct a thorough search if you want to find a great apartment. </h3>
                     <p>
-                        Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                        
                     </p>
                 </Carousel.Caption>
             </Carousel.Item>

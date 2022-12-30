@@ -39,12 +39,13 @@ const Header = () => {
           <Nav className="mx-auto me-0 menu">
             <Link to="/">Home</Link>
             <Link to="/services">Services</Link>
-
+            <Link to="/showreview">User Review</Link>
             <Link to="/contact">Contact Us</Link>
             <Link to="/faq">FAQ</Link>
             {user?.uid ? (
               <div>
-                <Link to="/addrent">Add rent</Link>
+                <Link to="/addrent">Add Services</Link>
+                <Link to="/review">Add Review</Link>
                 <Button onClick={logout} variant="primary">
                   Logout
                 </Button>
