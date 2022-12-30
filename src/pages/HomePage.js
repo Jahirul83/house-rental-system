@@ -32,6 +32,10 @@ const HomePage = (props) => {
             <div>
                 <Banner />
             </div>
+            <div className="d-flex justify-content-center mt-3">
+                <h1 className="text-uppercase">Populer Apartments</h1>
+            </div>
+
             <div>
                 <div>
                     <div className='d-flex flex-wrap gap-5 justify-content-center my-4'>
@@ -46,6 +50,10 @@ const HomePage = (props) => {
                     </div>
                     <div className="d-flex justify-content-center">
                         <Link to="/services"><Button variant="outline-primary btn-lg">Show More</Button></Link>
+                    </div>
+
+                    <div className="d-flex justify-content-center mt-5">
+                        <h1 className="text-uppercase">User Reviews</h1>
                     </div>
                     <div className='d-flex flex-wrap gap-5 justify-content-center my-4'>
                         {

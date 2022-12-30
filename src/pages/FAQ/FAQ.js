@@ -8,39 +8,39 @@ const FAQ = () => {
                 <h2 className="mb-5 text-4xl font-bold leading-none text-center sm:text-5xl">Frequently Asked Questions</h2>
                 <div className="flex flex-col ms-5">
                     <details>
-                        <summary className="py-2">How your furniture items are technically distinct from that of others?</summary>
+                        <summary className="py-2">What services available on Rents?</summary>
                         <div className="px-4 pb-4">
-                            <p>Apart from using hand-picked raw materials, our furniture items are absolutely nail-free and made of basing on time-honored manufacturing techniques like tongue and groove, finger joints, mortise and tenon, dovetail joints.</p>
+                            <p>We provide all rental solution, e.i Residential apartment, Furnished apartment, Service apartment, Commercial space, Office space, Retail shop, Restaurant space and full building searching, arrange property viewing, price negotiation and helps to prepare rental agreement for owner and tenant.</p>
                         </div>
                     </details>
                     <details>
-                        <summary className="py-2">What’s your Return Policy?</summary>
+                        <summary className="py-2">Should I pay any fees?</summary>
                         <div className="px-4 pb-4">
-                            <p>Furniture items in good condition can be returned in 3 days of purchase. This policy is in place to show respect to the notion that a customer may change his/her mind within a certain period of time and that shouldn’t cost him/her a fortune. Only a 10% service charge will be applied on the total amount of purchase in this case. It is not applicable for Fabric product or upholstered product.</p>
+                            <p>Our system does not allow to take any fees from tenant. </p>
                         </div>
                     </details>
                     <details>
-                        <summary className="py-2">Do you offer any warranty Policy?</summary>
+                        <summary className="py-2">Which area rents cover in Chattagram?</summary>
                         <div className="px-4 pb-4">
-                            <p>We offer 1 year free of cost after sales service warranty which covers any damages caused due to production defects.</p>
+                            <p>Right now Rents team cover three different areas like Agrabad, Ak Khan and Chawkbazar Zone.</p>
                         </div>
                     </details>
                     <details>
-                        <summary className="py-2">Do you offer any Exchange Policy?</summary>
+                        <summary className="py-2">How do I place my requirements?</summary>
                         <div className="px-4 pb-4">
-                            <p>Furniture can be exchanged in good condition within 3 days with 5% service charge. It is not applicable for customized, set broken and fabric products.</p>
+                            <p>Very simple…. just visit our web portal, see properties in your required areas and place it through mobile number direct call. Recently our tech team introduce ‘Rental query form’ for tenants, just fill up and submit. Our dedicated rental agent will get back as early as possible and serve your required properties.</p>
                         </div>
                     </details>
                     <details>
-                        <summary className="py-2">Do you offer any Delay Penalty?</summary>
+                        <summary className="py-2">Will Rents send me a soft copy of the rental agreement??</summary>
                         <div className="px-4 pb-4">
-                            <p>Star furniture will pay a delay penalty valuing 0.5% of the value of the goods per week if the delivery is not done within the standard deadline. However, there will be 15 days buffer before any such penalty is applied.</p>
+                            <p>Without check back from the tenant side Rents team never go proceed any rental agreement with property owner.</p>
                         </div>
                     </details>
                     <details>
-                        <summary className="py-2">Do you offer any Fitting Policy for Knockdown Furniture?</summary>
+                        <summary className="py-2">How do I add my property on Rents web portal?</summary>
                         <div className="px-4 pb-4">
-                            <p>Star furniture will pay a delay penalty valuing 0.5% of the value of the goods per week if the delivery is not done within the standard deadline. However, there will be 15 days buffer before any such penalty is applied.</p>
+                            <p>We have ‘Add Property’ options in our website. Just visit Rents.com.bd, click on ‘Add Property’, fill up the form properly and submit. Our property agent contact you, visit your property, do MOU with property owner and listing property on our website.</p>
                         </div>
                     </details>
                 </div>
