@@ -1,8 +1,8 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { Card } from 'react-bootstrap';
 import { useLoaderData } from 'react-router-dom';
-import { FaBed, FaToilet } from 'react-icons/fa';
-import { GiSofa } from 'react-icons/gi';
+import { FaBed, FaMobileAlt, FaToilet } from 'react-icons/fa';
+import { GiKitchenScale, GiSofa } from 'react-icons/gi';
 import Features from '../Features';
 
 
@@ -20,19 +20,23 @@ const ViewDetails = (props) => {
                     <div className='d-flex gap-3'>
                         <Card style={{ width: '25rem' }} className='border border-5'>
                             <Card.Body>
-                                <Card.Title>Details</Card.Title>
+                                <Card.Title className='fw-bold text-info'>Details</Card.Title>
                                 <Card.Text>
                                     <div className='d-flex'><h5><FaBed /> Bedroom: {props.viewData.bedroom}</h5></div>
                                     <div className='d-flex'> <h5><FaToilet />washroom: {props.viewData.washroom}</h5></div>
                                     <div className='d-flex'><h5><GiSofa /> dining: {props.viewData.dining}</h5></div>
+                                    <div className='d-flex'><h5><GiKitchenScale /> Kitchen: 1</h5></div>
                                 </Card.Text>
                             </Card.Body>
                         </Card>
                         <Card style={{ width: '25rem' }} className='border border-5'>
                             <Card.Body>
-                                <Card.Title>Contact</Card.Title>
+                                <Card.Title className='fw-bold text-info'>Contact</Card.Title>
                                 <Card.Text>
-                                    <div className='d-flex'><h5>contact: {props.viewData.contact}</h5></div>
+                                    <div className='d-flex'><h5>If you interested this flat for Rent</h5></div>
+                                </Card.Text>
+                                <Card.Text>
+                                    <div className='d-flex'><h5> <FaMobileAlt />Call : {props.viewData.contact}</h5></div>
                                 </Card.Text>
                             </Card.Body>
                         </Card>

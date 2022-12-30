@@ -18,12 +18,12 @@ function Cards({ service, setDetails }) {
             <Card >
                 <Card.Img style={{ height: "300px", width: "29vw" }} variant="top" src={service.image} />
                 <Card.Body>
-                    <Card.Title>{service.title}</Card.Title>
+                    <Card.Title className='fw-bold text-info'>{service.title}</Card.Title>
                     <Card.Text>
                         {service.address}
                     </Card.Text>
-                    <Card.Text>BDT{" "}
-                        {service.rent}
+                    <Card.Text className='fw-bold '>BDT{" "}
+                        {service.rent} /Mo
                     </Card.Text>
                     {
                         user &&

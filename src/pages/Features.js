@@ -1,6 +1,9 @@
 import React from 'react';
 import { AiOutlinePhone, AiOutlineSafety } from 'react-icons/ai'
-import { GiCampCookingPot, GiElectric } from 'react-icons/gi'
+import { GiCampCookingPot, GiElectric, GiGuards, GiCctvCamera, GiSecurityGate } from 'react-icons/gi'
+import {BiWater} from 'react-icons/bi'
+import {FaChild} from 'react-icons/fa'
+import {MdRoofing} from 'react-icons/md'
 
 const Features = () => {
     return (
@@ -39,50 +42,50 @@ const Features = () => {
             </div>
             <div className='d-flex flex-column align-items-center border border-4 rounded py-4'>
                 <div>
-                    <GiCampCookingPot style={{fontSize:'50px'}}/>
+                    <GiGuards style={{fontSize:'50px'}}/>
                 </div>
                 <div>
-                    <h3>GAS</h3>
-                </div>
-            </div>
-            <div className='d-flex flex-column align-items-center border border-4 rounded py-4'>
-                <div>
-                    <GiCampCookingPot style={{fontSize:'50px'}}/>
-                </div>
-                <div>
-                    <h3>GAS</h3>
+                    <h3>Security Guard</h3>
                 </div>
             </div>
             <div className='d-flex flex-column align-items-center border border-4 rounded py-4'>
                 <div>
-                    <GiCampCookingPot style={{fontSize:'50px'}}/>
+                    <GiCctvCamera style={{fontSize:'50px'}}/>
                 </div>
                 <div>
-                    <h3>GAS</h3>
-                </div>
-            </div>
-            <div className='d-flex flex-column align-items-center border border-4 rounded py-4'>
-                <div>
-                    <GiCampCookingPot style={{fontSize:'50px'}}/>
-                </div>
-                <div>
-                    <h3>GAS</h3>
+                    <h3>CCTV</h3>
                 </div>
             </div>
             <div className='d-flex flex-column align-items-center border border-4 rounded py-4'>
                 <div>
-                    <GiCampCookingPot style={{fontSize:'50px'}} />
+                    <BiWater style={{fontSize:'50px'}}/>
                 </div>
                 <div>
-                    <h3>GAS</h3>
+                    <h3>WASA</h3>
                 </div>
             </div>
             <div className='d-flex flex-column align-items-center border border-4 rounded py-4'>
                 <div>
-                    <GiCampCookingPot style={{fontSize:'50px'}} />
+                    <GiSecurityGate style={{fontSize:'50px'}}/>
                 </div>
                 <div>
-                    <h3>GAS</h3>
+                    <h3>Guard Room</h3>
+                </div>
+            </div>
+            <div className='d-flex flex-column align-items-center border border-4 rounded py-4'>
+                <div>
+                    <FaChild style={{fontSize:'50px'}} />
+                </div>
+                <div>
+                    <h3>Child Allowed</h3>
+                </div>
+            </div>
+            <div className='d-flex flex-column align-items-center border border-4 rounded py-4'>
+                <div>
+                    <MdRoofing style={{fontSize:'50px'}} />
+                </div>
+                <div>
+                    <h3>Roof Facility</h3>
                 </div>
             </div>
 
