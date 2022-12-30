@@ -41,6 +41,7 @@ const Header = () => {
             <Link to="/services">Services</Link>
 
             <Link to="/contact">Contact Us</Link>
+            <Link to="/faq">FAQ</Link>
             {user?.uid ? (
               <div>
                 <Link to="/addrent">Add rent</Link>

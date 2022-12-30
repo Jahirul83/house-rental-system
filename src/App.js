@@ -14,6 +14,8 @@ import PrivateRoutes from './components/PrivateRoutes';
 import Services from './pages/Services';
 import AddRent from './pages/AddRent/AddRent';
 import ViewDetails from './pages/viewDetails/viewDetails';
+import FAQ from './pages/FAQ/FAQ';
+import Review from './pages/Review/Review';
 
 
 
@@ -32,6 +34,8 @@ function App() {
         <Route path='/Contact' element={<PrivateRoutes><Contact /></PrivateRoutes>} />
         <Route path='/ViewDetails' element={<ViewDetails viewData={viewD}></ViewDetails>} />
         <Route path='/addrent' element={<AddRent />} />
+        <Route path='/faq' element={<FAQ />} />
+        <Route path='/review' element={<Review />} />
       </Routes>
       <Footer />
     </div>

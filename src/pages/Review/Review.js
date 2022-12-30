@@ -1,14 +1,11 @@
 import React from 'react';
 import { Button, Card, FloatingLabel, Form } from 'react-bootstrap';
-import './Contact.css';
-import contact from './images/contact.jpg';
 
-const Contact = () => {
+const Review = () => {
     return (
         <div className='contact-design'>
-            <img className='rounded-5 mx-3 my-3' src={contact} alt="" width="500" height="600"></img>
             <Card className='contact-card'>
-                <p class="h1 mt-5 fw-bold d-flex justify-content-center">Contact Us</p>
+                <p class="h1 mt-5 fw-bold d-flex justify-content-center">Review</p>
                 <Card.Body>
                     <Form>
                         <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -41,4 +38,4 @@ const Contact = () => {
     );
 };
 
-export default Contact;
+export default Review;

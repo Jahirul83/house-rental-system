@@ -17,7 +17,7 @@ const Services = (props) => {
 
 
     return (
-        <div>
+        <div className='servcesBG'>
             <div className='d-flex flex-wrap gap-5 justify-content-center'>
                 {
                     services.map(service => <Cards setDetails={props.setData}
@@ -27,7 +27,6 @@ const Services = (props) => {
                     ></Cards>)
                 }
             </div>
-
         </div>
     );
 };

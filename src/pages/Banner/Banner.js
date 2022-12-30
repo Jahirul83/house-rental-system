@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Banner = () => {
     return (
-        <div className='px-3 rounded mt-5'>
+        <div className='px-3 rounded mt-3'>
         <Carousel rounded={5}>
             <Carousel.Item interval={1000}>
                 <img

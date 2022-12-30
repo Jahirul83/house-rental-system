@@ -38,7 +38,7 @@ const SignUp = () => {
   }
   return (
     <div className="SignUpCard">
-      <Card className="cardDesignofsignup mt-3 mb-3" >
+      <Card className="cardDesignofsignup my-3" >
       <p class="h1 mt-5 fw-bold d-flex justify-content-center">Sign Up</p>
         <Card.Body>
           <Form onSubmit={SignUp}>

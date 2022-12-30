@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { Button, Card } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../contexts/UserContext';
+import './Cards.css'
 
 function Cards({ service, setDetails }) {
 
@@ -15,7 +16,7 @@ function Cards({ service, setDetails }) {
     }
     return (
         <div>
-            <Card >
+            <Card className='card-design' >
                 <Card.Img style={{ height: "300px", width: "29vw" }} variant="top" src={service.image} />
                 <Card.Body>
                     <Card.Title className='fw-bold text-info'>{service.title}</Card.Title>
