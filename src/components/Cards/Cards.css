@@ -1,4 +1,13 @@
-.card-design{
+.card-design {
+    height: 500px;
+    width: 25vw;
     box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
-    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+        0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+.card-image {
+    display: flex;
+    justify-content: center;
+    height: 250px;
+    width: 25vw;
 }

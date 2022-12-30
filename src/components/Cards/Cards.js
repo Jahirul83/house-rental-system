@@ -17,7 +17,7 @@ function Cards({ service, setDetails }) {
     return (
         <div>
             <Card className='card-design' >
-                <Card.Img style={{ height: "300px", width: "29vw" }} variant="top" src={service.image} />
+                <Card.Img className='card-image' variant="top" src={service.image} />
                 <Card.Body>
                     <Card.Title className='fw-bold text-info'>{service.title}</Card.Title>
                     <Card.Text>

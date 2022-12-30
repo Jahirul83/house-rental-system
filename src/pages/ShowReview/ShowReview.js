@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import ReviewCard from '../../components/Cards/ReviewCard';
 import Cards from '../../components/Cards/ReviewCard';
 
 const ShowReview = () => {
@@ -13,16 +14,17 @@ const ShowReview = () => {
 
     return (
         <div className='servcesBG'>
-        <div className='d-flex flex-wrap gap-5 justify-content-center'>
-            {
-                showReview.map(review => <Cards 
-                    key={review._id}
-                    review={review}
-
-                ></Cards>)
-            }
+            <div className='d-flex flex-wrap gap-5 justify-content-center my-4'>
+                {
+                    showReview.map(review =>
+                        <ReviewCard
+                            key={review._id}
+                            review={review}
+                        ></ReviewCard>
+                    )
+                }
+            </div>
         </div>
-    </div>
     );
 };
 

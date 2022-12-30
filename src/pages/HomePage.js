@@ -6,6 +6,7 @@ import Banner from "./Banner/Banner";
 import FAQ from "./FAQ/FAQ";
 import './HomePage.css';
 import Services from "./Services";
+import ShowReview from "./ShowReview/ShowReview";
 //test
 const HomePage = (props) => {
 
@@ -93,9 +94,7 @@ const HomePage = (props) => {
                         <Link to="/services"><Button variant="outline-primary btn-lg">Show More</Button></Link>
                     </div>
                     <div className="d-flex justify-content-center">
-                        <h4>
-                            review bosabo
-                        </h4>
+                        <ShowReview/>
                     </div>
                     <div>
                         <FAQ/>
