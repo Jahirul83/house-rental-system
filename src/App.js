@@ -25,7 +25,7 @@ function App() {
     <div className="App">
       <Header></Header>
       <Routes>
-        <Route path='/' element={<HomePage />} />
+        <Route path='/' element={<HomePage setData={setViewD} />} />
         <Route path='/SignUp' element={<SignUp />} />
         <Route path='/login' element={<Login />} />
         <Route path='/Services' element={<Services setData={setViewD}></Services>} />

@@ -1,10 +1,21 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import Cards from "../components/Cards/Cards";
 import Banner from "./Banner/Banner";
 import './HomePage.css';
 import Services from "./Services";
 //test
-const HomePage = () => {
-    const count = 3;
+const HomePage = (props) => {
+    
+    const [services, setService] = useState([]);
+
+    const selectedServices = services?.slice(0,6);
+
+    useEffect(() => {
+        fetch('http://localhost:5000/services')
+            .then(res => res.json())
+            .then(data => setService(data));
+    }, []);
+
     return (
         <section id="page-banner">
             <div className="container-fluid">
@@ -63,7 +74,18 @@ const HomePage = () => {
                 <Banner />
             </div>
             <div>
-                <Services />
+            <div>
+            <div className='d-flex flex-wrap gap-5 justify-content-center'>
+                {
+                    selectedServices.map(service => <Cards setDetails={props.setData}
+                        key={service._id}
+                        service={service}
+
+                    ></Cards>)
+                }
+            </div>
+
+        </div>
             </div>
         </section>
     );
