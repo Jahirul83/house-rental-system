@@ -2,6 +2,8 @@ import React from "react";
 import { Button, Card, Form } from "react-bootstrap";
 import { Link, useNavigate } from "react-router-dom";
 import "./AddRent.css";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 
@@ -34,6 +36,16 @@ const AddRent = () => {
     })
       .then(res => res.json())
       .then(data => {
+        toast.success('Data inserted successfully', {
+          position: "top-center",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+          });
 
 
         form.reset();
@@ -143,6 +155,18 @@ const AddRent = () => {
       </div>
 
       <input className="btn btn-primary w-50 mx-auto" type="submit" value="Add" />
+      <ToastContainer
+        position="top-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
 
     </form>
   );

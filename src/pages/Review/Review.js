@@ -2,7 +2,8 @@ import React, { useContext } from 'react';
 import { Button, Card, FloatingLabel, Form } from 'react-bootstrap';
 import { AuthContext } from '../../components/contexts/UserContext';
 import review from '../images/review.jpg'
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const Review = () => {
 
   const { user } = useContext(AuthContext);
@@ -27,8 +28,16 @@ const Review = () => {
     })
       .then(res => res.json())
       .then(data => {
-
-
+        toast.success('Data inserted successfully', {
+          position: "top-center",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+          });
         form.reset();
       })
 
@@ -76,7 +85,18 @@ const Review = () => {
       </div>
 
       <input className="btn btn-primary w-50 mx-auto" type="submit" value="Add" />
-
+      <ToastContainer
+        position="top-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
     </form>
   );
 };
