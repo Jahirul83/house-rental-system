@@ -36,7 +36,7 @@ const SignUp = () => {
       })
       .catch(error => {
         console.error(error)
-        alert('This email already exists')
+        alert('Somethings is wrong! try again please.')
       })
 
   }
@@ -65,6 +65,9 @@ const SignUp = () => {
             <Form.Group className="mb-3" controlId="formBasicPassword">
               <Form.Label>Password</Form.Label>
               <Form.Control name='password' type="password" placeholder="Password" required/>
+               <Form.Text className="text-muted">
+                Password atleast 6 charachter or number
+              </Form.Text>
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasicPassword">
               <Form.Label>Retype-Password</Form.Label>
