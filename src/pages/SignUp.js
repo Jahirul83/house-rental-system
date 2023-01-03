@@ -31,9 +31,13 @@ const SignUp = () => {
         const user = result.user
         console.log(user)
         form.reset();
+        alert('Registration successfull')
         navigate('/login')
       })
-      .catch(error => console.error(error))
+      .catch(error => {
+        console.error(error)
+        alert('This email already exists')
+      })
 
   }
   return (

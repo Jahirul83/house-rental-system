@@ -31,9 +31,13 @@ const Login = () => {
         const user = result.user
         console.log(user)
         form.reset()
+        alert('Login successfull')
         navigate(from, { replace: true })
       })
-      .catch(error => console.error(error))
+      .catch(error =>{
+        alert('Wrong email or pass')
+        console.error(error)
+      })
   }
   return (
     <div className="logincard">
